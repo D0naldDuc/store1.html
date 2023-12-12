@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin-top: 10px;
+        }
+
+        .user-info {
+            background-color: #eee;
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Best Online Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Dre Dre's Services</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#green-cards">Green Cards</a></li>
+            <li><a href="#passports">Passports</a></li>
+            <li><a href="#visas">Visas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="green-cards" class="product">
+            <img src="https://cdn-0.immigrationroad.com/images/green-card/green-card-new-design-2010.JPG?ezimgfmt=ng%3Awebp%2Fngcb53%2Frs%3Adevice%2Frscb53-1" alt="Product 1">
+            <h3>Price: $250.69</h3>
+            <button>Buy Now</button>
+        </section>
+
+        <section id="passports" class="product">
+            <img src="https://t4.ftcdn.net/jpg/03/23/63/73/240_F_323637363_LS9hLRP07kz3zyPvD552QwtHY12MXEPi.jpg" alt="Product 2">
+            <h3>Price: $200.69</h3>
+            <button>Buy Now</button>
+        </section>
+
+        <section id="visas" class="product">
+            <img src="https://visaguide.world/wp-content/uploads/2022/01/what-does-a-visa-look-like-1-300x200.jpg" alt="Product 3">
+            <h3>Price: $300.69</h3>
+            <button>Buy Now</button>
+        </section>
+    </main>
+
+    <nav>
+        <section class="user-info">
+            <h2>Provide Your Information</h2>
+            <form action="process_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="1" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </nav>
+</body>
+</html>
